@@ -1,11 +1,28 @@
 <!DOCTYPE html>
 <html>
     <head><title>Contact Us</title>
+	<link href="restaurantStyles.css"
+	rel="stylesheet"
+	type="text/css"/>
+	<style>
+	h1 {
+	text-align:center;
+	}
+	table.blocktext {
+	margin-left:auto;
+	margin-right:auto;
+	width:40em;
+	}
+	td.rtalign {
+	text-align:right;
+	}
+	td.lftalign {
+	text-align:left;
+	}
+	</style>
     </head>
     <body>
-        <div>
-        <h1 align="center">Tasty Creations</h1>
-        </div>
+        <h1>Tasty Creations</h1>
              <hr/>
         <br/>
         <a href="tasty_creations.html"/>Home</a>
@@ -13,40 +30,39 @@
         <a href="contactUs.html"/>Contact Us</a>
         <hr/> 
         <div>
-            <center>
-         <table>   
+       
+         <table class="blocktext">   
         <tr>
         
-<td align="right"><b>Name:</b> </td><td><input type="text" name="myName"/></td>
+<td class=rtalign><b>Name:</b> </td><td><input type="text" name="myName"/></td>
         </tr>
         <br/>
         <tr>
-<td align="right"><b>Email:</b> </td><td><input type="text" name="myEmail"/></td>
+<td class=rtalign><b>Email:</b> </td><td><input type="text" name="myEmail"/></td>
 </tr>
 <br/>
 <tr> 
-<td align="right"><b>  Phone:</b> </td><td><input type="text" name="myPhone"/></td>
+<td class=rtalign><b>  Phone:</b> </td><td><input type="text" name="myPhone"/></td>
 </tr>
 <br/>
 
 <br/>
 <tr>
-<td align="right"><b>Reason:</b> </td><td><select name="reason">
+<td class=rtalign><b>Reason:</b> </td><td><select name="reason">
     <option value="catering">Catering</option>
     <option value="privateParty">Private Party</option>
     <option value="feedback">Feedback</option>
     <option value="other">Other</option></td></tr>
     <br/>
 <tr>
-<td align="right"><b>Additional Information: </b></td><td><textarea name="additionalInfo"></textarea></td></tr>
+<td class=rtalign><b>Additional Information: </b></td><td><textarea name="additionalInfo"></textarea></td></tr>
 <br/>
 
 <tr>
-<td align="right"><b>Have you been to the restaurant?</b> </td><td><input type="radio" name="priorCustomer" value="No" checked/>No
+<td class=rtalign><b>Have you been to the restaurant?</b> </td><td><input type="radio" name="priorCustomer" value="No" checked/>No
 <input type="radio" name="priorCustomer" value="Yes"/>Yes</td></tr>
 <tr>
-<tr>
-    <td align="right"><b>Best days to contact you:</b></td>
+    <td class=rtalign><b>Best days to contact you:</b></td>
 <td><input type="checkbox" name="days" value="M"/>M
 <input type="checkbox" name="days" value="T"/>T
 <input type="checkbox" name="days" value="W"/>W
@@ -57,9 +73,9 @@
 
 <tr>
     <td></td>
-<td align="center"><input type="submit" value="Send Request"/></td></tr>
+<td class=lftalign><input type="submit" value="Send Request"/></td></tr>
 </table>
-            </center>
+           
         </div>
         
   
@@ -75,8 +91,10 @@
        <br/>
        <br/>
        <hr/>
+	   <footer>
         <center>100 Main St, Lexington, KY 40507<br/>
 		<br/>
         859-555-1212</center>
+		</footer>
     </body>
 </html>
