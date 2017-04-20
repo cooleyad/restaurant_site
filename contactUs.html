@@ -8,10 +8,27 @@
 	h1 {
 	text-align:center;
 	font-family:Courier;
+    }
+    a {
+	font-weight:none;
+	text-decoration:none;
+    color:black;
+	}
+	a:link {
+	text-decoration:none;
+    color:black;
 	}
     a:visited {
         color:red;
     }
+	a:hover {
+	font-weight:bold;
+    color:black;
+	}
+	a:active {
+	text-decoration:none;
+    color:black;
+	}
 	
 	table.blocktext {
 	margin-left:auto;
@@ -26,18 +43,42 @@
 	text-align:left;
 	}
 	</style>
+    	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+
+<!-- Optional theme -->
+<link rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"/>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
+</script>
     </head>
     <body>
         <h1>Tasty Creations</h1>
              <hr/>
         <br/>
-        <a href="tasty_creations.html"/>Home</a>
-        <a href="menu.html"/>Menu</a>
-        <a href="contactUs.html"/>Contact Us</a>
+        		
+	<div>	
+	 <ul class="nav nav-pills">
+	 <li class="active">
+		<a href="tasty_creations.html"><span class="glyphicon glyphicon-home"></span></a>
+		</li>
+		<li>
+        <a href="menu.html">Menu</a>
+		</li>
+		<li>
+        <a href="contactUs.html">Contact Us</a>
+		</li>
+		</ul>
+		</div>
+
         <hr/> 
-        <div>
-       
-         <table class="blocktext">   
+
+        <div class="table-responsive">     
+<!--         <table class="blocktext">   -->
+    <table class="table">
         <tr>
         
 <td class=rtalign>Name:</td><td><input type="text" name="myName"/></td>
@@ -83,8 +124,6 @@
 </table>
            
         </div>
-        
-  
     
         <br/>
        <br/>
