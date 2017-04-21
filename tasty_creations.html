@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head><title>Home Page</title>
 	<link href="restaurantStyles.css"
 	rel="stylesheet"
 	type="text/css"/>
+	<meta charset="utf-8">
 	<style>
 		h1 {
 	font-family:Courier;
@@ -12,7 +13,15 @@
 	div.bodycol {
 	background-color:yellow;
 	}
-	
+    .carousel-content {
+		display:flex;
+		align-items:center;
+	}
+	#text-carousel {
+		width:100%;
+		height:auto;
+		padding:50px;
+	}
 	a {
 	font-weight:none;
 	text-decoration:none;
@@ -44,12 +53,15 @@
 <link rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"/>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>	  
+
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
 </script>
 
     </head>
     <body>
+	<noscript>This site is best viewed with JavaScript enabled.</noscript>
         <div >
         <h1>Tasty Creations</h1>
         </div>
@@ -74,10 +86,48 @@
 	
 		<center>
 				<div class="jumbotron">
-<h2>We're opening a new location!</h2>
-Our new restaurant in Georgetown will be opening in June.
-Check back for details.
+
+<div id="text-carousel" class="carousel slide" data-interval="3200" data-ride="carousel">
+<div class="row">
+<div class="col-xs-offset-3 col-xs-6">
+<div class="carousel-inner">
+    <div class="item active">
+	<div class="carousel-content">
+	<div>
+      <p> We're opening a new location! Our Georgetown restaurant opens in June.
+	  Check back for details!</p>
+	</div> 
+      </div>
+    </div>
+      <div class="item">
+	  <div class="carousel-content">
+    <div>
+	<p>We're rolling out our seasonal menu, with special options for this season.'</p>
+      </div>
+	  </div>
+      </div>
+    <div class="item">
+	<div class="carousel-content">
+        <div>
+		<p>The Drink of the Month is SG Special Brew.</p>
+      </div>
+	</div>
+    </div>
+    </div>
+	</div>
+    </div>
+    <a class="left carousel-control" href="#text-carousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#text-carousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
 </div>
+
+<!-- <h2>We're opening a new location!</h2>
+Our new restaurant in Georgetown will be opening in June.
+Check back for details. 
+</div> -->
 </center>
 <div class="table-responsive">
 		<div class=bodycol>
